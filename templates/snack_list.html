@@ -2,14 +2,13 @@
 
 {% block content %}
 
-<a href="{% url 'snack_create' %}">+ New Snack</a>
+<a href="{% url 'snack_create' %}" class="ml-2 bg-blue-400 px-1 text-lg" >+ New Snack</a>
 <ul>
   {% for snack in object_list %}
   <li>
-    <a href="{% url 'snack_detail' snack.pk %}">{{ snack.title }}</a>
+    <a href="{% url 'snack_detail' snack.pk %}" class="bg-blue-300 px-1 text-lg">{{ snack.title }}</a>
   </li>
   {% endfor %}
 </ul>
 
 {% endblock content %}
-

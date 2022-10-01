@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Update Page</h1>
+
+<h1 class="ml-2 my-2 text-2xl font-bold ">Update Page</h1>
 <form action="" method="post">
   {% csrf_token %}
   {{ form.as_p }}
-  <input type="submit" value="SAVE">
+  <input type="submit" value="SAVE" class="bg-gray-400 px-1 ml-5 font-normal">
 </form>
 
 {% endblock content %}
